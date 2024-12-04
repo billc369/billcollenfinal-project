@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Machine Learning Model Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      /* General Body Styles */
+      body {
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+        padding: 0;
+        background: #f1e3d3; /* Soft beige background */
+        color: #4e3629; /* Dark brown for text */
+      }
+
+      /* Header Section */
+      .project-header {
+        background: linear-gradient(to right, #f57c00, #f1e3d3); /* Hermès orange to beige gradient */
+        padding: 6rem 0;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .project-header h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .project-header p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+
+      /* Project Description Section */
+      .project-description, .tech-stack {
+        padding: 5rem 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        background: #ffffff; /* White background for content */
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-description h2, .tech-stack h2 {
+        color: #f57c00; /* Hermès orange for headings */
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .project-description p, .tech-stack p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4e3629; /* Dark brown for text */
+      }
+
+      .project-description ul, .tech-stack ul {
+        font-size: 1.1rem;
+        color: #4e3629;
+        list-style: none;
+        padding: 0;
+      }
+
+      .project-description ul li, .tech-stack ul li {
+        margin-bottom: 0.8rem;
+      }
+
+      .tech-stack h3 {
+        color: #f57c00; 
+        font-weight: 600;
+        margin-top: 2rem;
+      }
+
+      /* Button Styling */
+      .back-button {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      .back-button a {
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: #f57c00; 
+        border-radius: 50px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .back-button a:hover {
+        background-color: #ffffff;
+        color: #f57c00;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .project-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .project-description, .tech-stack {
+          padding: 4rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Project Header Section -->
+    <header class="project-header">
+      <h1>Machine Learning Model Project</h1>
+      <p class="lead">An innovative machine learning model designed to predict and analyze real-world data, aiding businesses in decision-making processes.</p>
+    </header>
+
+    <!-- Project Description Section -->
+    <section class="project-description container">
+      <h2>Project Overview</h2>
+      <p>
+        This project is a machine learning model built to analyze large datasets and provide valuable insights for predictive decision-making. The model is capable of classification, regression, and clustering tasks, making it highly versatile for a variety of industries. It utilizes Python and key libraries like Scikit-learn, TensorFlow, and Pandas to process and analyze data.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Features</h3>
+          <ul>
+            <li>Classification, regression, and clustering capabilities</li>
+            <li>Data preprocessing and feature engineering tools</li>
+            <li>Model evaluation and cross-validation</li>
+            <li>Real-time predictions and results visualization</li>
+            <li>Customizable for different types of data and use cases</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Challenges Overcome</h3>
+          <ul>
+            <li>Dealing with imbalanced datasets and outliers</li>
+            <li>Optimizing model performance through hyperparameter tuning</li>
+            <li>Ensuring accurate predictions and minimizing overfitting</li>
+            <li>Handling large-scale datasets for real-time analysis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="tech-stack container">
+      <h2>Technologies Used</h2>
+      <p>The following technologies were used to build and train the machine learning model:</p>
+      <ul>
+        <li>Python (for data processing and machine learning algorithms)</li>
+        <li>Scikit-learn (for building machine learning models)</li>
+        <li>TensorFlow (for deep learning and neural networks)</li>
+        <li>Pandas (for data manipulation)</li>
+        <li>Matplotlib & Seaborn (for data visualization)</li>
+        <li>Jupyter Notebook (for experimentation and analysis)</li>
+      </ul>
+    </section>
+
+    <!-- Back Button Section -->
+    <section class="back-button">
+      <a href="index.html">Back to Portfolio</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

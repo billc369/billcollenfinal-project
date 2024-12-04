@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloud Infrastructure Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      /* General Body Styles */
+      body {
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+        padding: 0;
+        background: #f1e3d3; 
+        color: #4e3629; 
+      }
+
+      /* Header Section */
+      .project-header {
+        background: linear-gradient(to right, #f57c00, #f1e3d3); 
+        padding: 6rem 0;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .project-header h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .project-header p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+
+      /* Project Description Section */
+      .project-description, .tech-stack {
+        padding: 5rem 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        background: #ffffff; 
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-description h2, .tech-stack h2 {
+        color: #f57c00; 
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .project-description p, .tech-stack p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4e3629; 
+      }
+
+      .project-description ul, .tech-stack ul {
+        font-size: 1.1rem;
+        color: #4e3629;
+        list-style: none;
+        padding: 0;
+      }
+
+      .project-description ul li, .tech-stack ul li {
+        margin-bottom: 0.8rem;
+      }
+
+      .tech-stack h3 {
+        color: #f57c00; 
+        font-weight: 600;
+        margin-top: 2rem;
+      }
+
+      /* Button Styling */
+      .back-button {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      .back-button a {
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: #f57c00; 
+        border-radius: 50px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .back-button a:hover {
+        background-color: #ffffff;
+        color: #f57c00;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .project-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .project-description, .tech-stack {
+          padding: 4rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Project Header Section -->
+    <header class="project-header">
+      <h1>Cloud Infrastructure Project</h1>
+      <p class="lead">A highly scalable cloud infrastructure solution designed to meet the growing needs of modern enterprises.</p>
+    </header>
+
+    <!-- Project Description Section -->
+    <section class="project-description container">
+      <h2>Project Overview</h2>
+      <p>
+        This cloud infrastructure project focuses on creating a robust, flexible, and scalable cloud platform for enterprises. It integrates virtual machines, networking, storage, and security to deliver a comprehensive cloud environment. The solution allows businesses to leverage cloud resources for cost optimization, disaster recovery, and efficient scaling of operations.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Features</h3>
+          <ul>
+            <li>Scalable infrastructure to handle growing workloads</li>
+            <li>Secure virtual private cloud (VPC) setup</li>
+            <li>Disaster recovery and high availability configurations</li>
+            <li>Cost optimization tools and resource management</li>
+            <li>Seamless integration with third-party services and APIs</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Challenges Overcome</h3>
+          <ul>
+            <li>Ensuring high availability across multiple data centers</li>
+            <li>Implementing cost-efficient resource allocation</li>
+            <li>Managing network security and user access</li>
+            <li>Optimizing performance for large-scale data processing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="tech-stack container">
+      <h2>Technologies Used</h2>
+      <p>The following technologies were used to build the cloud infrastructure solution:</p>
+      <ul>
+        <li>Amazon Web Services (AWS) for cloud resource management</li>
+        <li>Azure for hybrid cloud integration</li>
+        <li>Docker and Kubernetes for container orchestration</li>
+        <li>Terraform for infrastructure as code (IaC)</li>
+        <li>Apache Kafka for real-time data processing</li>
+        <li>Prometheus and Grafana for monitoring and alerting</li>
+      </ul>
+    </section>
+
+    <!-- Back Button Section -->
+    <section class="back-button">
+      <a href="index.html">Back to Portfolio</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

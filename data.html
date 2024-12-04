@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis Tool Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      /* General Body Styles */
+      body {
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+        padding: 0;
+        background: #f1e3d3; /* Soft beige background */
+        color: #4e3629; /* Dark brown for text */
+      }
+
+      /* Header Section */
+      .project-header {
+        background: linear-gradient(to right, #f57c00, #f1e3d3); /* Hermès orange to beige gradient */
+        padding: 6rem 0;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .project-header h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .project-header p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+
+      /* Project Description Section */
+      .project-description, .tech-stack {
+        padding: 5rem 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        background: #ffffff; /* White background for content */
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-description h2, .tech-stack h2 {
+        color: #f57c00; /* Hermès orange for headings */
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .project-description p, .tech-stack p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4e3629; /* Dark brown for text */
+      }
+
+      .project-description ul, .tech-stack ul {
+        font-size: 1.1rem;
+        color: #4e3629;
+        list-style: none;
+        padding: 0;
+      }
+
+      .project-description ul li, .tech-stack ul li {
+        margin-bottom: 0.8rem;
+      }
+
+      .tech-stack h3 {
+        color: #f57c00; /* Hermès orange */
+        font-weight: 600;
+        margin-top: 2rem;
+      }
+
+      /* Button Styling */
+      .back-button {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      .back-button a {
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: #f57c00; /* Hermès orange */
+        border-radius: 50px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .back-button a:hover {
+        background-color: #ffffff;
+        color: #f57c00;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .project-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .project-description, .tech-stack {
+          padding: 4rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Project Header Section -->
+    <header class="project-header">
+      <h1>Data Analysis Tool Project</h1>
+      <p class="lead">A powerful and intuitive tool designed for seamless data analysis, helping businesses make data-driven decisions.</p>
+    </header>
+
+    <!-- Project Description Section -->
+    <section class="project-description container">
+      <h2>Project Overview</h2>
+      <p>
+        The Data Analysis Tool is designed to help businesses and data professionals easily analyze and interpret large sets of data. The tool supports various data formats, such as CSV, Excel, and JSON, and includes powerful features like data cleaning, visualization, and machine learning integration to uncover valuable insights and make data-driven decisions.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Features</h3>
+          <ul>
+            <li>Support for multiple data formats (CSV, Excel, JSON)</li>
+            <li>Real-time data visualization (graphs, charts, and dashboards)</li>
+            <li>Data cleaning and preprocessing tools</li>
+            <li>Integration with machine learning algorithms for predictive analytics</li>
+            <li>Customizable reports and data export options</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Challenges Overcome</h3>
+          <ul>
+            <li>Handling large datasets efficiently</li>
+            <li>Integrating machine learning algorithms seamlessly</li>
+            <li>Ensuring a user-friendly interface for non-technical users</li>
+            <li>Optimizing performance for real-time data processing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="tech-stack container">
+      <h2>Technologies Used</h2>
+      <p>In this project, I utilized the following technologies:</p>
+      <ul>
+        <li>Python (for data processing and analysis)</li>
+        <li>Pandas (for data manipulation)</li>
+        <li>Matplotlib & Seaborn (for data visualization)</li>
+        <li>Scikit-learn (for machine learning algorithms)</li>
+        <li>Flask (for web framework)</li>
+        <li>PostgreSQL (for database management)</li>
+      </ul>
+    </section>
+
+    <!-- Back Button Section -->
+    <section class="back-button">
+      <a href="index.html">Back to Portfolio</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

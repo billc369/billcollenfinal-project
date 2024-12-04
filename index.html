@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Collen - Landing Page Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hermes-orange: #FF6F61;
+            --hermes-gold: #FFD700;
+            --hermes-deep-brown: #8B4513;
+            --hermes-cream: #FFF5E1;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--hermes-cream);
+            color: var(--hermes-deep-brown);
+        }
+
+        .hermes-hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--hermes-orange), var(--hermes-gold));
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+        }
+
+        .hermes-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 4.5rem;
+            letter-spacing: -2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: var(--hermes-cream);
+        }
+
+        .hermes-subtitle {
+            font-weight: 300;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .hermes-cta {
+            background-color: var(--hermes-deep-brown);
+            color: var(--hermes-cream);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .hermes-cta:hover {
+            background-color: var(--hermes-orange);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .hermes-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(45deg, 
+                    rgba(255,255,255,0.05) 25%, 
+                    transparent 25%, 
+                    transparent 50%, 
+                    rgba(255,255,255,0.05) 50%, 
+                    rgba(255,255,255,0.05) 75%, 
+                    transparent 75%, 
+                    transparent
+                );
+            background-size: 80px 80px;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .hermes-wings {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 70% 30%, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%),
+                radial-gradient(circle at 30% 70%, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+            opacity: 0.5; 
+            z-index: 2; 
+            animation: wing-flow 10s infinite linear;
+        }
+
+        @keyframes wing-flow {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(5deg) scale(1.05); }
+            100% { transform: rotate(-5deg) scale(0.95); }
+        }
+
+        .typing-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid var(--hermes-cream);
+            animation: 
+                typing 2.5s steps(40, end),
+                blink 0.7s step-end infinite;
+            width: 0;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink {
+            0%, 100% { border-color: transparent }
+            50% { border-color: var(--hermes-cream) }
+        }
+
+        @media (max-width: 768px) {
+            .hermes-title {
+                font-size: 3rem;
+            }
+            .hermes-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hermes-hero">
+        <div class="hermes-pattern"></div>
+        <div class="hermes-wings"></div>
+        <div class="container hero-content">
+            <h1 class="hermes-title typing-text">Welcome to the Future</h1>
+            <p class="hermes-subtitle">Bridging Worlds Through Code</p>
+            <a href="index1.html" class="btn hermes-cta mt-4">Explore My Portofolio</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
